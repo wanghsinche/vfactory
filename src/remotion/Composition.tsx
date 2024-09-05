@@ -1,6 +1,9 @@
 import { AbsoluteFill, interpolate, Easing, spring, useCurrentFrame, useVideoConfig, Sequence } from 'remotion';
 import { fps, cardNumber, cardWidth, eachDurationInSec, cardSpeed, occuringDurationFromEdgeInSec, cardColorArrayInTailwind, cardArray } from './constant';
 import { Card, Card3, ICard3Props } from './Card';
+import { loadFont } from "@remotion/google-fonts/ReemKufiInk";
+ 
+const { fontFamily } = loadFont();
 
 interface IProps extends ICard3Props {
 }
@@ -42,7 +45,7 @@ export const MyVideo: React.FC = () => {
   })
 
   return (
-    <AbsoluteFill className='bg-black' >
+    <AbsoluteFill className='bg-black' style={{fontFamily}}>
 
       {startDurationArray.map((el) => (<Sequence key={el.startDuration} durationInFrames={Math.ceil(eachDurationInSec * fps)} from={el.startDuration} >
         <MyComposition {...el} />
