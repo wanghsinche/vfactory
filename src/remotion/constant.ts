@@ -4,8 +4,8 @@ import { staticFile } from "remotion";
 export const videoWidth = 1080
 export const videoHeight = 1920
 
-export const cardHeight = videoHeight / 4 * 3
-export const cardWidth = cardHeight / 1920 * 1080
+export const cardWidth = videoWidth / 2
+export const cardHeight = cardWidth / 1080 * 1920
 export const gap = 5
 
 export const cardNumber = 10;
@@ -36,67 +36,78 @@ export const cardColorArrayInTailwind = [
 export const cardArray: Array<{
     src: string
     name: string
-    votes: number
+    votes: number | string
     place: number
+    unit: string
 }> = [
         {
-            name: 'Gojo Satoru',
-            src: staticFile('Gojo.webp'),
-            votes: 113392,
-            place: 1
+            "src": "https://resizing.flixster.com/Lyw-kyg5APf-m-kdWEIrEZzJdIs=/206x305/v2/https://resizing.flixster.com/xCKKiD9OFB-f9oB12qYagRIY6l8=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvZWQ5ZTk3OWMtZWVkNi00MGIxLTljYTUtZDNjMTNiMjQxZDg2LmpwZw==",
+            "name": "Scavengers Reign",
+            "votes": "Popcornmeter: 96%",
+            "place": 1,
+            "unit": "Sci-Fi, Adventure"
         },
         {
-            name: 'Yuji Itadori',
-            src: staticFile('Yuji.webp'),
-            votes: 48131,
-            place: 2
+            "src": "https://resizing.flixster.com/FtfMB8t5ntDMV3oW8wvg-xjY3-A=/206x305/v2/https://resizing.flixster.com/s3rsf5qQ8Z41R2plMiRI6vTSLJg=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvUlRUVjkwMjAzOS53ZWJw",
+            "name": "Jujutsu Kaisen",
+            "votes": "Popcornmeter: 87%",
+            "place": 2,
+            "unit": "Supernatural."
         },
         {
-            name: 'Megumi Fushiguro',
-            src: staticFile('Megumi.webp'),
-            votes: 28502,
-            place: 3
+            "src": "https://resizing.flixster.com/UkgaL4TQSBJwG09wXg8chQSTWRA=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p16749713_b_v8_ak.jpg",
+            "name": "Demon Slayer",
+            "votes": "Popcornmeter: 87%",
+            "place": 3,
+            "unit": "Action, Adventure."
         },
         {
-            name: 'Suguru Geto',
-            src: staticFile('Suguru.jpg'),
-            votes: 19156,
-            place: 4
+            "src": "https://resizing.flixster.com/8calhngeAJZOPfvSFfLeHjfGrzU=/206x305/v2/https://resizing.flixster.com/WbMVIapZ0xGSCA0bjm5nukQi3QE=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvMTRhNzFlMmQtZTNlMi00M2MyLWFkZGItMWFjNWZiMmVmYjc4LmpwZw==",
+            "name": "Pluto",
+            "votes": "Popcornmeter: 95%",
+            "place": 4,
+            "unit": "Sci-Fi, Mystery."
         },
         {
-            name: 'Naoya Zenin',
-            src: staticFile('Naoya.webp'),
-            votes: 11731,
-            place: 5
+            "src": "https://resizing.flixster.com/VM0PpjdGAiVgE5rz0jdeeZfrtoo=/206x305/v2/https://resizing.flixster.com/H4vBioi_7L6dzSykCLDpyutcnXw=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvMjI4YmM5ODItODVjYy00NDBjLTg2MDItNTg5NjRjZWIxYzg3LmpwZw==",
+            "name": "Delicious in Dungeon",
+            "votes": "Popcornmeter: 95%",
+            "place": 5,
+            "unit": "Fantasy, Adventure."
         },
         {
-            name: 'Choso',
-            src: staticFile('Choso.jpeg'),
-            votes: 6247,
-            place: 6
+            "src": "https://resizing.flixster.com/o25UhuQ07AQO_oj-sEQ3EBrZNmA=/206x305/v2/https://resizing.flixster.com/UwW5gfJPEpuvDdCnAPRT9V9plfI=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvUlRUVjcxMjgxNy53ZWJw",
+            "name": "Vinland Saga",
+            "votes": "Popcornmeter: 78%",
+            "place": 6,
+            "unit": "Action, Historical."
         },
         {
-            name: 'Yuta Okkotsu',
-            src: staticFile('Yuta.webp'),
-            votes: 5991,
-            place: 7
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTodo1l4UfRDRm2Tnlg1eBDtX9pxLCAtFBK2Khg6ogxe1NT2ZhABbPUHzQt1M1CX9SwQpc&usqp=CAU",
+            "name": "My Hero Academia Uncut",
+            "votes": "Popcornmeter: 87%",
+            "place": 7,
+            "unit": "Action, Superhero."
         },
         {
-            name: 'Nanami',
-            src: staticFile('Nanami.webp'),
-            votes: 4162,
-            place: 8
+            "src": "https://resizing.flixster.com/AXjakkOp7onq96NTjnSlVKPm-Ns=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p186423_b_v8_ae.jpg",
+            "name": "One Piece",
+            "votes": "Popcornmeter: 92%",
+            "place": 8,
+            "unit": "Action, Adventure."
         },
         {
-            name: 'Sukuna',
-            src: staticFile('Sukuna.jpg'),
-            votes: 4077,
-            place: 9
+            "src": "https://m.media-amazon.com/images/M/MV5BOTcyOGZiMzctNTQyOS00OTYzLTk0M2EtMTI5MTU0NmU5ZGU2XkEyXkFqcGdeQXVyMTI2NTY3NDg5._V1_.jpg",
+            "name": "Record of Ragnarok",
+            "votes": "Popcornmeter: 74%",
+            "place": 9,
+            "unit": "Action, Fantasy."
         },
         {
-            name: 'Toji Fushiguro',
-            src: staticFile('Toji.jpg'),
-            votes: 3218,
-            place: 10
+            "src": "https://resizing.flixster.com/Smx93H5cbKs4D45X1r75ZNj1gOo=/206x305/v2/https://resizing.flixster.com/zsWu778dkr50G1r2eJqvhWWzMUk=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvZTA2MWExZWQtNjdkYy00NDkyLWEwY2ItZTRjOGFiOGRhMjllLmpwZw==",
+            "name": "Junji Ito Maniac",
+            "votes": "Popcornmeter: 57%",
+            "place": 10,
+            "unit": "Horror, Anthology."
         },
     ]
