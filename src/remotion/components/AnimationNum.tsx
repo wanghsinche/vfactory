@@ -3,7 +3,8 @@ import { useVideoConfig, useCurrentFrame, interpolate, Easing } from "remotion";
 export const AnimationNum = (p:{num: number|string, sec: number, from: number}) => {
     const { fps } = useVideoConfig();
     const frame = useCurrentFrame();
-    
+    console.log(p.num)
+    if (!p.num) return ''
     const targetText = p.num.toString().match(/[\d\.\-]+/)?.[0] || ''
     const target = parseInt(targetText)
     const prefix = p.num.toString().split(targetText)[0]
