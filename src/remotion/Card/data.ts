@@ -56,7 +56,7 @@ export const data = [
         "alt": "Flamme",
         "alias": "Flame",
         "desc": "火焰，火焰的颜色，热情性格",
-        "src2": "https://png.pngtree.com/png-clipart/20230331/original/pngtree-illustrated-fire-art-png-image_9013436.png"
+        "src2": "https://img.freepik.com/free-photo/fire-forest-flames-generative-ai_169016-29514.jpg"
     },
     {
         "src": "https://animerants.net/wp-content/uploads/2024/01/frieren-episode-07-lugner-wine.png?w=1024",

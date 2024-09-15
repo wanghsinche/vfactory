@@ -56,7 +56,7 @@ export const MyVideo: React.FC = () => {
               }
 
               if (idx === 1) {
-                return <Sequence from={2.5 * fps} durationInFrames={(4 + eachDurationInSec) * fps}>
+                return <Sequence from={1.5 * fps} durationInFrames={(4 + eachDurationInSec) * fps}>
                   <SlideX key={el.card.name} input={[0, .5 * fps]} output={[cardWidth, 0]} extrapolateRight='clamp' extrapolateLeft='clamp'>
                     <Card3 key={el.card.name} {...el.card} animation />
                   </SlideX>
