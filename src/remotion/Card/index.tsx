@@ -41,7 +41,7 @@ export const MyVideo: React.FC = () => {
         <BgVideo src={staticFile('frieren.mp4')} startFrom={0}/>
       </Sequence> */}
 
-      <Sequence from={0*fps} durationInFrames={Math.ceil(totalDurationInSec * fps)}>
+      <Sequence from={0*fps} durationInFrames={Math.ceil(totalDurationInSec * fps)} style={{transform: 'translateY(10%)'}}>
         
         <SlideX input={[3 * fps, Math.ceil((totalDurationInSec + 3) * fps)]} output={[0, -cardSpeed * totalDurationInSec]} extrapolateLeft='clamp'>
           <div className='h-full flex absolute ' style={{ width: 9999, }}>
