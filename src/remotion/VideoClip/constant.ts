@@ -1,1 +1,1 @@
-export const totalDurationInSec = 60
+export const totalDurationInSec = 5
