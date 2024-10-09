@@ -1,3 +1,4 @@
+import { staticFile } from "remotion";
 export interface IData {
     name: string
     position: number
@@ -6,95 +7,136 @@ export interface IData {
     votes: string | number
     src: string
     src2: string
+    srcIsGif?: boolean
 }
 
 export const data = [
     {
-        "src": "https://i0.wp.com/inbetweendrafts.com/wp-content/uploads/2023/09/Frn_EP01_still_013.jpg?fit=1920%2C1080&ssl=1",
-        "alt": "Frieren",
-        "alias": "Frozen",
-        "desc": "冷冻，令人感觉寒冷，芙莉莲也是雪的颜色",
-        "src2": "https://thumbs.dreamstime.com/b/winter-anime-wallpaper-snowy-foggy-landscape-ai-generated-image-301469386.jpg"
+        "src": "https://staticg.sportskeeda.com/editor/2023/09/dff48-16950406372284-1920.jpg",
+        "alt": "7:00 pm",
+        "alias": "Shibuya Crossing",
+        "desc": "帷帐落下",
+        "src2": "https://a3.cdn.japantravel.com/photo/3016-197865/800!/tokyo-shibuya-crossing-197865.jpg"
+    },
+
+
+    {
+        "src": "https://www.animepilgrimage.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fanime-pilgrimage-bc.appspot.com%2Fo%2Fimages%252Fjjk_s2_2%252Fjjk-s2-2-10.jpg%3Falt%3Dmedia%26token%3Dd5cba96c-1969-4418-9ad0-f6d7d9c211f8&w=1080&q=75",
+        "alt": "8:14 pm",
+        "alias": "Exit 13 of the Shibuya Metro Station",
+        "desc": "七海组到达",
+        "src2": "https://www.animepilgrimage.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fanime-pilgrimage-bc.appspot.com%2Fo%2Fimages%252Fjjk_s2_2%252Fjjk-s2-2-10r.jpg%3Falt%3Dmedia%26token%3D79071c5e-e52c-41af-bc90-af5f05d6956a&w=1080&q=75"
+    },
+
+    {
+        "src": "https://www.animepilgrimage.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fanime-pilgrimage-bc.appspot.com%2Fo%2Fimages%252Fjjk_s2_2%252Fjjk-s2-2-8.jpg%3Falt%3Dmedia%26token%3Da3414cd9-5ea4-473a-8228-8dde450483b2&w=1080&q=75",
+        "alt": "8:14 pm",
+        "alias": "Louvers of mirror at shibuya",
+        "desc": "禅院组到达",
+        "src2": "https://www.animepilgrimage.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fanime-pilgrimage-bc.appspot.com%2Fo%2Fimages%252Fjjk_s2_2%252Fjjk-s2-2-8r.jpg%3Falt%3Dmedia%26token%3D95484067-ba87-4712-9357-903f5edcc6a4&w=1080&q=75 "
     },
     {
-        "src": "https://media.thepopverse.com/media/himmel-in-frieren-cekjwgmwvrpfldmtg3vh3yebpu.jpg",
-        "alt": "Himmel",
-        "alias": "Heaven",
-        "desc": "天空，蓝色，天空的颜色",
-        "src2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYlznahGAykuQMLvJkpIiojAjtBXMdGjWBRw&s"
+        "src": "https://www.animepilgrimage.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fanime-pilgrimage-bc.appspot.com%2Fo%2Fimages%252Fjjk_s2_2%252Fjjk-s2-2-13.jpg%3Falt%3Dmedia%26token%3Dbf6c9f86-9048-456a-ad85-1dc8de196248&w=1080&q=75",
+        "alt": "8:14 pm",
+        "alias": "Shin Minami entrance",
+        "desc": "日下部组到达",
+        "src2": "https://www.animepilgrimage.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fanime-pilgrimage-bc.appspot.com%2Fo%2Fimages%252Fjjk_s2_2%252Fjjk-s2-2-13r.jpg%3Falt%3Dmedia%26token%3D2be18271-9162-4ae2-b878-2c5b395378f3&w=1080&q=75"
     },
+
     {
-        "src": "https://i.pinimg.com/736x/aa/fd/e9/aafde9d2e10e13b3b4f80ea1e331e599.jpg",
-        "alt": "Heiter",
-        "alias": "humorous",
-        "desc": "幽默，愉快",
-        "src2": "https://imgcdn.stablediffusionweb.com/2024/5/17/26570584-03af-4634-8eab-c836e090a441.jpg"
+        "src": staticFile('gojo-enter.gif'),
+        "alt": "8:31 pm",
+        "alias": "Doegnzaka Nichome East",
+        "desc": "五条悟进入帷帐",
+        "src2": "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2021/10/Shinjuku-nichome-5-Yana-1.jpeg",
+        "srcIsGif": true
     },
+
+
     {
-        "src": "https://staticg.sportskeeda.com/editor/2023/10/b03df-16967427088542-1920.jpg",
-        "alt": "Eisen",
-        "alias": "Iron",
-        "desc": "铁，铁一般的意志",
-        "src2": "https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638891630/EducationHub/photos/lava-flow.jpg"
+        "src": "https://www.animepilgrimage.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fanime-pilgrimage-bc.appspot.com%2Fo%2Fimages%252Fjjk_s2_2%252Fjjk-s2-2-4.jpg%3Falt%3Dmedia%26token%3Db410b31a-8028-4723-9340-cc3ee111fc40&w=1080&q=75",
+        "alt": "8:31 pm",
+        "alias": "Shin Q BF1",
+        "desc": "五条悟进入涩谷HIKARIE",
+        "src2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV0P5xZz6KJbE-662STs85ugyg_45lwM-bCz3mGFKIwre-MiRt0mxPTp5wDanpioiDFMk&usqp=CAU"
     },
+
     {
-        "src": "https://image.tensorartassets.com/model_showcase/654179349731462294/aeebadc1-1e11-81e2-0d9a-fd05ecc77f30.jpeg",
-        "alt": "Fern",
-        "alias": "Far",
-        "desc": "距离感，远距离魔法攻击",
-        "src2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt2yjJgLN6UWWUuad8WkCv9OU-_ov4pnspeovgzdY_YTbm9TYELOTI9zujW6ia1hlIvEY&usqp=CAU"
+        "src": "https://staticg.sportskeeda.com/editor/2023/12/fc175-17031805015582-1920.jpg?w=640",
+        "alt": "8:39 pm",
+        "alias": "Aoyama Cemetery",
+        "desc": "冥冥组开始行动",
+        "src2": "https://i0.wp.com/www.tokyostreetview.com/wp-content/uploads/2016/04/20160405-Tokyo-Aoyama-Cemetery.jpg?fit=1280%2C720&ssl=1"
     },
+
+
     {
-        "src": "https://cdn.oneesports.gg/cdn-data/2024/03/How_old_is_Stark_Frieren_A_Journeys_End_Anime.jpg",
-        "alt": "Stark",
-        "alias": "Strong",
-        "desc": "强壮的战士",
-        "src2": "https://i.pinimg.com/originals/b0/6e/bd/b06ebd20b2e79d36aef9c8526da665b8.gif"
+        "src": "https://www.animepilgrimage.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fanime-pilgrimage-bc.appspot.com%2Fo%2Fimages%252Fjjk_s2_2%252Fjjk-s2-2-14.jpg%3Falt%3Dmedia%26token%3D97392665-db26-4e6f-90eb-e58a45659311&w=1080&q=75",
+        "alt": "8:51 pm",
+        "alias": "Meiji-Jingumae station",
+        "desc": "帷帐原理被解析",
+        "src2": "https://www.animepilgrimage.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fanime-pilgrimage-bc.appspot.com%2Fo%2Fimages%252Fjjk_s2_2%252Fjjk-s2-2-14r.jpg%3Falt%3Dmedia%26token%3Da26019c9-e9b7-42a6-bce4-282587933eb3&w=1080&q=75"
     },
+
+    
+
     {
-        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmXoE_qfkcqtjKRPv44UYGHryC8FoFS0RoPg&s",
-        "alt": "Flamme",
-        "alias": "Flame",
-        "desc": "火焰，火焰的颜色，热情性格",
-        "src2": "https://img.freepik.com/free-photo/fire-forest-flames-generative-ai_169016-29514.jpg"
+        "src": "https://www.animepilgrimage.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fanime-pilgrimage-bc.appspot.com%2Fo%2Fimages%252Fjjk_s2_2%252Fjjk-s2-2-15.jpg%3Falt%3Dmedia%26token%3D87234c38-5ff9-423c-81ee-1cf1b486d10b&w=1080&q=75",
+        "alt": "8:51 pm",
+        "alias": "Meiji-Jingumae",
+        "desc": "虎杖遇到咒灵，冥冥破解第二层帷帐",
+        "src2": "https://www.animepilgrimage.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fanime-pilgrimage-bc.appspot.com%2Fo%2Fimages%252Fjjk_s2_2%252Fjjk-s2-2-15r.jpg%3Falt%3Dmedia%26token%3Dd5228e8b-dd60-4393-95aa-2884bf734e20&w=1080&q=75"
     },
+
+    
+
     {
-        "src": "https://animerants.net/wp-content/uploads/2024/01/frieren-episode-07-lugner-wine.png?w=1024",
-        "alt": "Lügner",
-        "alias": "Liar",
-        "desc": "撒谎者，骗子",
-        "src2": "https://media.istockphoto.com/id/912932764/vector/vector-illustration-business-person-disguise-with-mask.jpg?s=612x612&w=0&k=20&c=zXMTgFFhEYKdMVrf0hrkbTx05mP73NWN5qvi-lYkLx4="
+        "src": "https://www.animepilgrimage.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fanime-pilgrimage-bc.appspot.com%2Fo%2Fimages%252Fjjk_s2_2%252Fjjk-s2-2-30.jpg%3Falt%3Dmedia%26token%3D31f66ad3-e0f6-4a6b-b41f-040852f4c5ee&w=1080&q=75",
+        "alt": "9:14 pm",
+        "alias": "Harajaku/Meiji - Jinguame",
+        "desc": "冥冥组重启行动",
+        "src2": "https://www.animepilgrimage.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fanime-pilgrimage-bc.appspot.com%2Fo%2Fimages%252Fjjk_s2_2%252Fjjk-s2-2-30r.jpg%3Falt%3Dmedia%26token%3D123c33be-d01a-4d57-902c-74064a5c6a8d&w=1080&q=75"
     },
+
+    
     {
-        "src": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/61488f0e-7337-4d82-a366-aeb2fb45ee80/width=450/3859677.jpeg",
-        "alt": "Kraft",
-        "alias": "Power",
-        "desc": "力量，精灵武僧",
-        "src2": "https://pics.craiyon.com/2023-08-27/dd714737115a47f3b009dba7b14ca6f5.webp"
+        "src": staticFile('mahito-enter.gif'),
+        "alt": "9:15 pm",
+        "alias": "Shibuya",
+        "desc": "真人到达涩谷地下站台",
+        "src2": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Shibuya_Station_Toyoko_Line_Platform_4_%26_5_2018.jpg/300px-Shibuya_Station_Toyoko_Line_Platform_4_%26_5_2018.jpg",
+        "srcIsGif": true
     },
+
+
     {
-        "src": "https://static1.srcdn.com/wordpress/wp-content/uploads/2024/01/ubel-looks-around-in-frieren.jpg",
-        "alt": "Übel",
-        "alias": "Evil",
-        "desc": "邪恶，腹黑的Übel",
-        "src2": "https://wallpapercave.com/wp/wp2129382.jpg"
+        "src": staticFile('zero02.gif'),
+        "alt": "9:22 pm",
+        "alias": "Shibuya B5F",
+        "desc": "五条悟0.2秒领域展开",
+        "src2": "https://upload.wikimedia.org/wikipedia/commons/5/54/TokyoMetro-shibuya-Z01-platform.jpg",
+        "srcIsGif": true
     },
+
+
     {
-        "src": "https://s2.dmcdn.net/v/Va5lr1bd2z70r8rHe/x1080",
-        "alt": "Denken",
-        "alias": "Thinker",
-        "desc": "思考者，邓肯是一个睿智的人",
-        "src2": "https://vinaire.me/wp-content/uploads/2015/03/mind5.jpg"
-    }
+        "src": 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7804bcbCqJFo-_m04Rc6ykIfqfTJf_WCY0A&s',
+        "alt": "9:26 pm",
+        "alias": "Shibuya B5F",
+        "desc": "五条悟被封印",
+        "src2": "https://www.animepilgrimage.com/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fanime-pilgrimage-bc.appspot.com%2Fo%2Fimages%252Fjjk_s2_2%252Fjjk-s2-2-3r.jpg%3Falt%3Dmedia%26token%3D2e3cecd3-e3a4-4e4f-b2c8-3d1581177e81&w=1080&q=75",
+    },
 ]
-    .map((el, idx) => ({
+.reverse()    
+.map((el, idx) => ({
         name: el.alt,
         position: idx+1,
         cate: el.alias,
         votes: '',
         src2: el.src2,
         unit: el.desc,
-        src: el.src
+        src: el.src,
+        srcIsGif: el.srcIsGif
     })) as IData[]
 
 export const BGColor = '#2094dd'//'#d4dfe5'//'linear-gradient(90deg, #24090b 20%, rgba(36, 9, 11, 0.6) 80%, #24090b)'

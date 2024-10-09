@@ -5,7 +5,7 @@ export const cardWidth = videoWidth / 4 * 3
 export const cardHeight = cardWidth / 1080 * 1920
 export const gap = 5
 
-export const cardNumber = 10;
+export const cardNumber = 12;
 export const eachDurationInSec = 10;
 
 

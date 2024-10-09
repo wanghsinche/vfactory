@@ -44,7 +44,7 @@ export const MyVideo: React.FC = () => {
       <Sequence from={0*fps} durationInFrames={Math.ceil(totalDurationInSec * fps)} style={{transform: 'translateY(10%)'}}>
         
         <SlideX input={[3 * fps, Math.ceil((totalDurationInSec + 3) * fps)]} output={[0, -cardSpeed * totalDurationInSec]} extrapolateLeft='clamp'>
-          <div className='h-full flex absolute ' style={{ width: 9999, }}>
+          <div className='h-full flex absolute ' style={{ width: 9999 }}>
             {seqArray.map((el, idx) => {
               if (idx === 0) {
                 return <Sequence from={0} durationInFrames={(4 + eachDurationInSec) * fps}>
